@@ -1,0 +1,577 @@
+html{
+    transition: all 0.9s;
+    
+}
+body{
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgb(183, 219, 219) !important;
+
+}
+section{
+    width: 90%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    position: fixed;
+    background-color: rgb(183, 219, 219) !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.096);
+    z-index: 4;
+    transition: all 0.3s;
+
+}
+.mynavbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.mynavbar a, .mynavbar i{
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    margin-left: 2px;
+}
+.mynavbar i{
+    color: orangered;
+}
+
+.mynavbar a:hover, .mynavbar i:hover{
+    background-color: rgba(0, 0, 0, 0.436);
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.436);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.236);
+}
+
+#section1 .row{
+    margin-top: 130px;
+}
+.spa{
+    padding-top: 140px;
+    padding-left: 70px !important;
+}
+
+.spa h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.spa p{
+    opacity: 0.5;
+    font-size: 20px;
+}
+.spa button{
+    border: none;
+    border-radius: 20px;
+    background-color: orangered;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.436);
+    padding: 7px 17px;
+    font-weight: 700 ;
+    margin-top: 10px;
+}
+.spa button i{
+    margin-left: 10px;
+}
+button:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.236);
+
+}
+
+#section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section2 .row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    
+}
+#section2 .row img{
+    width: 340px;
+}
+
+#section2 h3{
+    color: rgba(0, 0, 0, 0.621);
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+#box{
+    border-top: 5px solid orangered;
+    width: 6%;
+    padding: 20px;
+}
+#box:hover{
+    cursor: pointer;
+    width: 18%;
+    transition: all 0.3s;
+
+}
+
+.featured{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.featured img, .featured2 img{
+    width: 250px;
+}
+
+.featured-item{
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+.featured-item:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all linear 0.2s;
+
+}
+.ratings i{
+    color: orangered;
+}
+.featured-item p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#rit{
+    color: rgba(0, 0, 0, 0.525);
+}
+
+.featured2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+#chi{
+    margin-top: 50px;
+}
+
+#section3{
+    height: 65vh;
+    width: 100%;
+    background-color: rgb(183, 219, 219) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section3 img{
+    height: 370px;
+}
+
+.smartBand{
+    width: 35%;
+}
+.smartBand h4{
+    font-size: 19px;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+.smartBand h2{
+    font-weight: 700;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.smartBand p{
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.smartBand button{
+    border: none;
+    border-radius: 20px;
+    background-color: orangered;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.436);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.236);
+    padding: 7px 17px;
+    font-weight: 700 ;
+    margin-top: 10px;
+}
+.smartBand button i{
+    margin-left: 10px;
+}
+
+.top-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.236);
+    margin-right: 20px !important;
+    padding: 50px 30px 30px 30px !important;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+.container:hover{
+    transform: scale(1.03);
+}
+
+.container img{
+    border-radius: 50%;
+    width: 100px !important;
+    position: absolute;
+    top: -60px;
+    left: 35%;
+    border: 10px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.066);
+
+}
+
+.container span{
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.136);
+}
+
+.logos-container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.loggo{
+    margin-right: 40px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.loggo:hover{
+    transform: scale(1.03);
+    filter: grayscale(0);
+    opacity: 1.2;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding-top: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.top-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.downloads h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+
+}
+
+.downloads p{
+    font-size: 16px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+
+}
+.downloads img{
+    width: 130px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.downloads img:hover{
+    transform: scale(1.05);
+}
+.downloads{
+    width: 25%;
+
+    padding-top: 20px;
+}
+
+.purpose{
+    width: 30%;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.purpose p{
+    font-size: 16px;
+    opacity: 0.5;
+}
+.purpose img{
+    width: 180px;
+}
+
+.links{
+    width: 15%;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+.links h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.links ul li{
+    list-style: none;
+    font-size: 16px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.links ul li:hover{
+    opacity: 1;
+}
+.links ul{
+    padding: 0;
+}
+
+#Copyright{
+    padding-top: 15px;
+    margin-top: 10px;
+    border-top: 1px solid white;
+    width: 85vw;
+    text-align: center;
+    cursor: pointer;
+}
+#Copyright:hover{
+    color:rgba(255, 166, 0, 0.542);
+}
+
+.head{
+    margin-top: 150px;
+    display: flex;
+    width: 81%;
+    justify-content: space-between;
+}
+.head h3{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.71);
+}
+.pagination{
+    width: 81%;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.pagination button{
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 3px;
+    border: 2px solid orangered;
+    font-weight: 500;
+}
+
+.active{
+    background-color: orangered !important;
+    color: white !important;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+  .selected-item{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    justify-content:  center;
+  }
+
+  .selected-images{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+#largeimg{
+    width: 100%;
+}
+  .miniimg{
+    width: 24%;
+    cursor: pointer;
+  }
+  .miniimg:hover{
+    filter: brightness(0.8);
+  }
+
+  .selected-details{
+    width: 40%;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+
+  .mini-images{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* width: 100%; */
+  }
+
+  .ab{
+    opacity: 0.6;
+    font-weight: 500;
+  }
+
+  .selected-details h1{
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+  .selected-details h5{
+    opacity: 0.85;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  #subject2{
+    border: 1px solid orangered;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  #subject3{
+    border: 1px solid orangered;
+    padding: 5px 2px;
+    cursor: pointer;
+
+  }
+
+  .selected-details button{
+    border: none;
+    border-radius: 20px;
+    background-color: orangered;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.436);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.236);
+    padding: 7px 17px;
+    font-weight: 700 ;
+    margin-top: 10px;
+    margin-left: 16px;
+  }
+
+  .mini-sub{
+    margin-bottom: 25px;
+  }
+  .bc{
+    opacity: 0.8;
+    width: 85%;
+    font-weight: 500;
+  }
+  .top-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+.related-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+  .related-images img{
+    margin-top: 50px;
+    width: 300px;
+    
+  }
+#viewmore{
+    padding: 5px 10px;
+
+}
+  #viewmore:hover{
+    padding: 5px 10px;
+    transform: scale(1.01);
+    border-radius: 4px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.336);
+   background-color: rgba(128, 128, 128, 0.216);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.236);
+  }

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css" integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="images/logo.png" style="width: 100px;" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Products</a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link" href="#">Account</a>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </nav> -->
+
+      <div class="main-body">
+        <nav>
+            <img src="images/logo.png" style="width: 120px;" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="mynavbar">
+                <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="products.html" >Products</a>
+                <a class="nav-item nav-link" onClick="document.querySelector('#section4').scrollIntoView();">About</a>
+                <a class="nav-item nav-link" onClick="document.querySelector('#section4').scrollIntoView();">Contact</a>
+                <a class="nav-item nav-link" href="#">Account</a>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>  
+          </nav>
+    
+          <section id="section1">
+            <div class="row">
+                <div class="col-6 spa">
+                    <h1>Give Your Workout A New Style!</h1>
+                    <p>Success isn't about greatness, it's about consistency. Consistent hard work gains success. Greatness will come</p>
+                    <button onClick="document.querySelector('#section2').scrollIntoView();" >Explore Now<i class="fa-solid fa-arrow-right fa-beat"></i></button>
+                </div>
+                <div class="col-6">
+                    <img src="images/image1.png" style="width: 620px;" alt="">
+                </div>
+              </div>
+          </section>
+      </div>
+        
+    
+          <section id="section2">
+            <div class="row">
+                    <img src="images/category-1.jpg" alt="">
+                    <img src="images/category-2.jpg" alt="">
+                    <img src="images/category-3.jpg" alt="">
+              </div>
+              <h3>Featured Products</h3>
+              <p id="box"></p>
+              <div class="featured">
+                <div class="featured-item">
+                    <img src="images/product-1.jpg" alt="">
+                    <p>Red Printed T-Shirt</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p id="rit">$50.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-2.jpg" alt="">
+                    <p>HRX Sports Shoes</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p id="rit">$75.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-3.jpg" alt="">
+                    <p>HRX Gray Trackpants</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p id="rit">$45.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-4.jpg" alt="">
+                    <p>Blue Printed T-Shirt</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p id="rit">$55.00</p>
+                </div>
+              </div>
+    
+    
+              <h3 id="chi">Latest Products</h3>
+              <p id="box"></p>
+
+    
+    
+              <div class="featured2">
+                <div class="featured-item">
+                    <img src="images/product-5.jpg" alt="">
+                    <p>Puma Gray Sports Shoes</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p id="rit">$95.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-6.jpg" alt="">
+                    <p>Black Printed T-Shirt</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p id="rit">$55.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-7.jpg" alt="">
+                    <p>HRX Set of 3 Socks</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p id="rit">$30.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-8.jpg" alt="">
+                    <p>Black Fossil Watch</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p id="rit">$120.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-9.jpg" alt="">
+                    <p>Black SportX Watch</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p id="rit">$135.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-10.jpg" alt="">
+                    <p>Black HRX Shoes</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p id="rit">$50.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-11.jpg" alt="">
+                    <p>Grey Nike Shoes</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p id="rit">$55.00</p>
+                </div>
+                <div class="featured-item">
+                    <img src="images/product-12.jpg" alt="">
+                    <p>HRX Black Trackpants</p>
+                    <div class="ratings" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p id="rit">$75.00</p>
+                </div>
+              </div>
+          </section>
+    
+          <section id="section3">
+            <img src="images/exclusive.png" alt="">
+            <div class="smartBand">
+                <h4>Exclusively Available on RedStore</h4>
+                <h2>Smart Band 4</h2>
+                <p>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness so everything is clear as can be.</p>
+                <button>Buy Now<i class="fa-solid fa-arrow-right fa-beat"></i></button>
+            </div>
+          </section>
+    
+          <section id="section4">
+            <div class="top-container">
+                <div class="container">
+                    <img src="images/user-1.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id inventore modi suscipit corporis iste officiis sapiente quasi corrupti dolores laboriosam! Optio provident laborum dolor. Nulla, suscipit possimus. Optio perspiciatis nesciunt voluptates et!</p>
+                    <p><span>Sean Parker </span>Co-founder at <b style="color:orangered; text-shadow: 2px 2px 4px rgba(0,0,0,.2);">XYZ</b></p>
+                </div>
+                <div class="container">
+                    <img src="images/user-2.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id inventore modi suscipit corporis iste officiis sapiente quasi corrupti dolores laboriosam! Optio provident laborum dolor. Nulla, suscipit possimus. Optio perspiciatis nesciunt voluptates et!</p>
+                    <p><span>Avinash Kr </span>Secretary at <b style="color:orangered; text-shadow: 2px 2px 4px rgba(0,0,0,.2);">XYZ</b></p>
+                </div>
+                <div class="container">
+                    <img src="images/user-3.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id inventore modi suscipit corporis iste officiis sapiente quasi corrupti dolores laboriosam! Optio provident laborum dolor. Nulla, suscipit possimus. Optio perspiciatis nesciunt voluptates et!</p>
+                    <p><span>Mabel Joe </span>Head Hr at <b style="color:orangered; text-shadow: 2px 2px 4px rgba(0,0,0,.2);">XYZ</b></p>
+                </div>
+            </div>
+            <div class="logos-container">
+                <img class="loggo" src="images/logo-godrej.png" alt="">
+                <img class="loggo" src="images/logo-oppo.png" alt="">
+                <img class="loggo" src="images/logo-coca-cola.png" alt="">
+                <img class="loggo" src="images/logo-paypal.png" alt="">
+                <img class="loggo" src="images/logo-philips.png" alt="">
+            </div>
+            
+          </section>
+    
+          <footer>
+            <div class="top-footer">
+                <div class="downloads">
+                    <h4>Download Our App</h4>
+                    <p>Download App for Android and Ios Mobile Phones</p>
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+                <div class="purpose">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose is to sustainably make the pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <p id="Copyright">Copyright 2020 - Fk Manny</p>
+            
+          </footer>
+
+     
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
