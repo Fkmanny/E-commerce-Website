@@ -1,0 +1,98 @@
+[
+    {
+        "id" : 0,
+        "image" : "images/product-1.jpg",
+        "name" : "Red Printed T-Shirt",
+        "price" : 50.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 1,
+        "image" : "images/product-2.jpg",
+        "name" : "HRX Sports Shoes",
+        "price" : 75.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 2,
+        "image" : "images/product-3.jpg",
+        "name" : "HRX Gray Trackpants",
+        "price" : 45.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 3,
+        "image" : "images/product-4.jpg",
+        "name" : "Blue Printed T-Shirt",
+        "price" : 55.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 4,
+        "image" : "images/product-5.jpg",
+        "name" : "Puma Gray Sports Shoes",
+        "price" : 95.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 5,
+        "image" : "images/product-6.jpg",
+        "name" : "Black Printed T-Shirt",
+        "price" : 55.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 6,
+        "image" : "images/product-7.jpg",
+        "name" : "HRX Set of 3 Socks",
+        "price" : 30.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 7,
+        "image" : "images/product-8.jpg",
+        "name" : "Black Fossil Watch",
+        "price" : 120.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 8,
+        "image" : "images/product-9.jpg",
+        "name" : "Black SportX Watch",
+        "price" : 135.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 9,
+        "image" : "images/product-10.jpg",
+        "name" : "Black HRX Shoes",
+        "price" : 50.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 10,
+        "image" : "images/product-11.jpg",
+        "name" : "Grey Nike Shoes",
+        "price" : 55.00,
+        "quantity" : 1
+    }
+    ,
+    {
+        "id" : 11,
+        "image" : "images/product-12.jpg",
+        "name" : "HRX Black Trackpants",
+        "price" : 75.00,
+        "quantity" : 1
+    }
+    
+]
