@@ -1,3 +1,4 @@
+
 fetch("productss.json")
  .then(function(response){
   return response.json();
@@ -50,7 +51,7 @@ fetch("productss.json")
 
   let selectedimgEl = document.createElement('div');
   selectedimgEl.className = "selected-images";
-  let selImgInfo = `<img style="width:455px; height:450px;" id="largeimg" src="${data[id].image}" alt="">
+  let selImgInfo = `<img style="" id="largeimg" src="${data[id].image}" alt="">
   <div class="mini-images">
       <img id="miniimg1" class="miniimg" src="images/gallery-1.jpg" alt="">
       <img id="miniimg2" class="miniimg" src="images/gallery-2.jpg" alt="">
@@ -90,6 +91,7 @@ fetch("productss.json")
   <h5>PRODUCT DETAILS</h5>
   <p class="bc">Give your Summer Wardrobe a style upgrade with the HRX Men's Active T-Shirt. 
       Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys</p>
+      <i class=" effect fa-solid fa-arrow-left fa-beat " onclick="leave()"></i>
 
       
        
@@ -122,9 +124,17 @@ document.getElementById('miniimg4').addEventListener('click', ()=>{
 
 });
 
+// let abcd = document.querySelector('.effect');
+
+// abcd.addEventListener('click', ()=>{  
+  
+// })
 }
 
-
+function leave() {
+  // window.location = "products.html";
+  location.reload();
+}
 
  let products = JSON.parse(localStorage.getItem("products"));
  let cart = JSON.parse(localStorage.getItem("cart"));
@@ -143,11 +153,24 @@ document.getElementById('miniimg4').addEventListener('click', ()=>{
     }
   }
   localStorage.setItem("cart", JSON.stringify(cart));
+  location.reload();
+
  }
 
  function removeItemFromCart(productId) {
-  let temp = cart.filter(item => item.id != productId);
-  localStorage.setItem('cart', JSON.stringify(temp));
+  let cart= JSON.parse(localStorage.getItem("cart"))
+  console.log(productId);
+
+     cart.splice(productId, 1); 
+
+
+    
+    localStorage.setItem("cart", JSON.stringify(cart));
+  
+
+  // let temp = cart.filter(item => item.id != productId);
+  // localStorage.setItem('cart', JSON.stringify(temp));
+  location.reload();
  }
 
  function getTotal() {
@@ -174,16 +197,19 @@ function astro(id){
   addItemToCart(id);
   let selectedOptionEl = document.getElementById('subject3').value;
   updateQuantity(id, selectedOptionEl);
-  let selectedOptionEl2 = document.getElementById('subject4');
-  selectedOptionEl2.value =  selectedOptionEl;
+
 }
 
  getTotal();
 
 
+ function remover(id){
+  removeItemFromCart(id);
+   }
 
-
-
+function selecter(id) {
+  alert("Kindly Go back to the products Page to update the quantity selected for this Item.")
+}
 
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
@@ -243,6 +269,20 @@ window.onscroll = function() {
  }
 
  const pagesEl = document.querySelectorAll('.page');
+
+
+ let jiggy1 = document.querySelectorAll('.front');
+
+for (let index = 0; index < jiggy1.length; index++) {
+  jiggy1[index].setAttribute(`onclick`, `front(${index})`);
+}
+
+
+function front(id) {
+  console.log("working");
+  window.location = "products.html";
+}
+
   
 function nextEl(){
   // pagesEl.forEach(element => {
@@ -296,21 +336,13 @@ function nextEl(){
     <div class="sub2">
         <p style="opacity: 0.9;"><b>${element.name}</b></p>
         <p>Price: $${element.price}.00</p>
-        <button id="removebutton">Remove</button>
+        <button class="removebutton" id="removebutton">Remove</button>
+        
     </div>
    </div>
-   <select name="subject" id="subject4" class="subject4 qua">
-          <option id="opt1" value="1">1</option>
-          <option id="opt2" value="2">2</option>
-          <option id="opt3" value="3">3</option>
-          <option id="opt4" value="4">4</option>
-          <option id="opt5" value="5">5</option>
-          <option id="opt6" value="6">6</option>
-          <option id="opt7" value="7">7</option>
-          <option id="opt8" value="8">8</option>
-          <option id="opt9" value="9">9</option>
-          <option id="opt10" value="10">10</option>
-      </select>
+   <p name="subject" id="subject4" class="subject4 qua">
+          ${element.quantity}
+      </p>
       <h5 class="totals" >$${element.price*element.quantity}.00</h5>
   
 
@@ -318,15 +350,30 @@ function nextEl(){
    `
    ;
 
-   
 
-console.log(element.image);
+
    itemContainerEl.innerHTML = itemContainerinfo;
    document.querySelector('.cart-output').appendChild(itemContainerEl);
-  
 
-
+   
  });
+
+
+ let button2El = document.querySelectorAll('.removebutton');
+//  button2El.setAttribute('onclick', `remover(${element.id})`);
+let addit = 0;
+ button2El.forEach(element => {
+  element.setAttribute('onclick', `remover(${addit})`);
+  addit++;
+  
+ });
+
+//  let selecEl = document.querySelectorAll('.subject4');
+//  let addit2 = 0;
+//  selecEl.forEach(element => {
+  
+//  });
+
 
 
 function namer() {
@@ -343,6 +390,10 @@ function namer() {
      console.log(outputArr[index].quantity);
   
      neew.push(outputArr[index].quantity*outputArr[index].price)
+
+     tselect[index].setAttribute(`onclick`, `selecter(${index})`);
+
+     
   
      }
     console.log(neew);
@@ -351,6 +402,13 @@ function namer() {
   (accumulator, currentValue) => accumulator + currentValue,
   initialValue
 );
+
+
+
+
+
+
+
 
 
   const totalEl = document.createElement('div');
@@ -415,7 +473,29 @@ window.addEventListener("load", ()=>{
   getTotall();
   
 
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "mynavbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "mynavbar";
+    }
+    x.style.flexDirection = "column";
+    
 
+  }
+  let jiggy = document.querySelectorAll('.front');
+
+for (let index = 0; index < jiggy.length; index++) {
+  console.log("working");
+
+  jiggy[index].setAttribute(`onclick`, `front(${index})`);
+  console.log("working");
   
+}
 
 
+function front(id) {
+  console.log("working");
+  window.location = "products.html";
+}

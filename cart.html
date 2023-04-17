@@ -16,17 +16,20 @@
 
       <div class="main-body" style="background-color: white !important;">
         <nav style="background-color: white !important;">
-            <img src="images/logo.png" style="width: 120px;" alt="">
+            <img src="images/logo.png" style="width: 120px; height: 40px;" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="mynavbar">
+            <div id="myTopnav" class="mynavbar">
                 <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="products.html">Products</a>
                 <a class="nav-item nav-link" onClick="document.querySelector('#section4').scrollIntoView();">About</a>
                 <a class="nav-item nav-link" onClick="document.querySelector('#section4').scrollIntoView();">Contact</a>
                 <a class="nav-item nav-link" href="#">Account</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a> <i class="fa-solid fa-cart-shopping" ></i></a>
+                <a href="#" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </div>  
         </nav>
 

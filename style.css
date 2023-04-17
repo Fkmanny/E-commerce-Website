@@ -52,6 +52,7 @@ nav{
     padding: 5px 10px;
     font-size: 1.2rem;
     margin-left: 2px;
+    display: block;
 }
 .mynavbar i{
     color: orangered;
@@ -107,14 +108,15 @@ button:hover{
     flex-direction: column;
     align-items: center;
 }
-#section2 .row{
+#section2 .rowa{
     display: flex;
     flex-direction: row;
     margin-top: 80px;
     margin-bottom: 120px;
+    flex-wrap: wrap;
     
 }
-#section2 .row img{
+#section2 .rowa img{
     width: 340px;
 }
 
@@ -141,6 +143,7 @@ button:hover{
     flex-direction: row;
     margin-top: 60px;
     margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 
 .featured img, .featured2 img{
@@ -458,6 +461,7 @@ footer{
 
 
   .selected-item{
+    width: 95%;
     display: flex;
     flex-direction: row;
     margin-top: 150px;
@@ -529,8 +533,21 @@ footer{
   }
   #subject4{
     border: 1px solid orangered;
-    padding: 5px 2px;
+    padding: 5px 10px;
     cursor: pointer;
+  }
+
+  .effect{
+    position: absolute;
+    font-size: 110px;
+    z-index: 10;
+    left: 3%;
+    top: 40%;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  #effect{
+    border: none;
   }
 
   .selected-details button{
@@ -562,6 +579,7 @@ footer{
 .related-images{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 120px;
 }
@@ -594,7 +612,9 @@ footer{
     border-radius: 2px;
     padding: 5px 5px 0px 5px;
   }
-
+#subject4 p{
+    padding: 5px 10px !important;
+}
   .cart-output{
     width: 68.5%;
     margin-bottom: 160px;
@@ -609,6 +629,7 @@ footer{
 
   .qua{
     margin-left: 10%;
+    padding: 5px 10px;
   }
   .qua2{
     margin-left: 35%;
@@ -685,4 +706,239 @@ footer{
 .total-container button:hover{
     filter: brightness(1.2);
     transform: none;
+}
+
+#largeimg{
+    width:455px; 
+    height:450px;
+}
+
+.mynavbar .icon {
+    display: none;
+  }
+
+
+
+
+
+@media (max-width:1200px) {
+    .selected-details{
+        transform: scale(0.8);
+    }
+    .selected-images{
+        transform: scale(0.8);
+
+    }
+    .effect{
+        left: -200%;
+    }
+    #largeimg{
+        width:400px; 
+        height:400px;
+    }
+    #section1{
+        transform: scale(0.8);
+        
+    }
+    #section2 .rowa{
+        /* transform: scale(0.6);
+        /* width: 100%; */
+        /* display: flex;
+        flex-direction: row !important;  */
+    }
+    #section2 .rowa img{
+        width: 200px;
+        margin-right: 10px;
+    }
+    .selected-images{
+        width: 58%;
+    }
+.total-container button{
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 100%;
+}
+.sub1{
+    
+    width: 40%;
+  }
+
+
+}
+@media (max-width:769px) {
+    #section1{
+        transform: scale(1);
+        
+    }
+    #section1 .row{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    #section1 .row .spa{
+        width: 90%;
+    }
+    .selected-details{
+        transform: scale(1);
+        width: 90%;
+    }
+    .selected-images{
+        transform: scale(1);
+    }
+    .selected-item{
+        transform: scale(1);
+
+        display: flex;
+        flex-direction:column;
+        margin-left: 20%;
+    }
+    .effect{
+        top: -50%;
+        left: -18%;
+    }
+    .total-container button{
+        /* transform: scale(0.9); */
+        margin-left: 1px;
+    }
+    .total-container button:hover{
+        /* transform: scale(0.9); */
+
+      }
+      .zag{
+        flex-direction: column;
+      }
+
+      .mynavbar a {display: none;}
+        .mynavbar a.icon {
+          float: right;
+          display: block;
+        }
+        .mynavbar.responsive {position: relative;}
+        .mynavbar.responsive a.icon {
+            position: absolute;
+            right: -35px;
+            top: -5;
+        }
+        .mynavbar.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        #section3, .top-container{
+            display: flex;
+            flex-direction: column;
+        }
+        #section3{
+            height: 110vh ;
+        }
+        .smartBand{
+            margin-top: 10px;
+            width: 80%;
+        }
+        .container{
+             margin-bottom: 70px;
+             margin-left: 7% !important;
+
+        }
+        .top-footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+      
+}
+
+@media (max-width:590px) {
+    .featured .featured-item{
+        /* text-align: center; */
+        align-items: center;
+    }
+    .featured2 .featured-item{
+        /* transform: scale(0.6) ; */
+    }
+    .downloads, .purpose, .links{
+        width: 80%;
+        text-align: center;
+    }
+    .container{
+        margin-left: 0px !important;
+    }
+    .top-container{
+        width: 100%;
+    }
+    .spa{
+        padding-left: 20px !important;
+    }
+    .minimized{
+        margin-top: 40px !important;
+        width: 300px !important;
+    }
+    .minimized2{
+        margin-top: 0px !important;
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .main-body{
+        height: 120vh;
+    }
+    .spa h1{
+        font-weight: 900;
+    font-size: 50px;
+    }
+    .rowa img{
+        width: 100px !important;
+    }
+    .featured{
+        justify-content: center !important;
+    }
+    #largeimg{
+        width: 250px !important;
+        height: 300px !important;
+    }
+    .selected-item{
+        margin-left: 110px !important;
+    }
+    .mini-images{
+        width: 250px;
+    }
+    .selected-details h1{
+        font-size: 40px;
+    }
+    .selected-details{
+        padding-left: 0px;
+    }
+    .hello{
+        overflow-x: hidden;
+    }
+    .effect{
+        font-size: 45px;
+    }
+    .topper{
+        width: 95%;
+    }
+    .qua2 {
+        margin-left: 20%;
+    }
+    .topper h5{
+        font-size: 1.05rem;
+    }
+    .sub1{
+        flex-direction: column;
+        width: 35%;
+        margin-bottom: 5px;
+    }
+    .cart-output{
+        width: 90%;
+    }
+    .sub2{
+        padding-left: 0px;
+    }
+    .encompass{
+        width: 95%;
+    }
+    .sub2 p{
+        font-size: 16px;
+        margin: 0;
+    }
 }
