@@ -854,7 +854,7 @@ footer{
     transform: rotateY(180deg);
 }
 .prompter.switch2{
-    transform: rotateY(0deg);
+    transform: rotateY(0) !important;
 }
 
 
