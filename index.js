@@ -499,3 +499,11 @@ function front(id) {
   console.log("working");
   window.location = "products.html";
 }
+
+function registerEl() {
+  document.querySelector('.prompter').classList.add('switch');
+};
+
+function loginEl() {
+  document.querySelector('.prompter').classList.remove('switch');
+};
