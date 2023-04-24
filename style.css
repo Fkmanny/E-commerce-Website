@@ -788,6 +788,7 @@ footer{
     cursor: pointer;
     font-weight: 600;
     font-size: 16px;
+    color: black !important;
 }
 .controllers button:hover{
     box-shadow: none;
@@ -851,6 +852,9 @@ footer{
 
 .prompter.switch{
     transform: rotateY(180deg);
+}
+.prompter.switch2{
+    transform: none;
 }
 
 
@@ -1091,6 +1095,6 @@ footer{
         transform: scale(0.9);
     }
     .main-body.git{
-        height: 70vh !important;
+        height: 90vh !important;
     }
 }

@@ -501,9 +501,13 @@ function front(id) {
 }
 
 function registerEl() {
+  document.querySelector('.prompter').classList.remove('switch2');
+
   document.querySelector('.prompter').classList.add('switch');
 };
 
 function loginEl() {
   document.querySelector('.prompter').classList.remove('switch');
+
+  document.querySelector('.prompter').classList.add('switch2');
 };
