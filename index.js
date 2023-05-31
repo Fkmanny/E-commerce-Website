@@ -139,6 +139,10 @@ function leave() {
  let products = JSON.parse(localStorage.getItem("products"));
  let cart = JSON.parse(localStorage.getItem("cart"));
 
+ //---------------------------------------------------
+ //-----------------ADD ITEM---------------------
+
+
  function addItemToCart(productId) {
   let product = products.find(function(product){
     return product.id == productId;
@@ -157,6 +161,9 @@ function leave() {
 
  }
 
+ //----------------------------------------------------
+ //-----------------REMOVE ITEM---------------------
+
  function removeItemFromCart(productId) {
   let cart= JSON.parse(localStorage.getItem("cart"))
   console.log(productId);
@@ -173,6 +180,9 @@ function leave() {
   location.reload();
  }
 
+ //----------------------------------------------------
+ //-----------------GET TOTAL--------------------
+
  function getTotal() {
   let temp = cart.map(function (item) {
     return parseFloat(item.price);
@@ -184,6 +194,9 @@ function leave() {
   console.log(sum);
 }
 
+ //----------------------------------------------------
+ //-----------------UPDATE QUANTITY---------------------
+
 function updateQuantity(productId, quantity) {
   for(let product of cart){
     if(product.id == productId){
@@ -192,6 +205,8 @@ function updateQuantity(productId, quantity) {
   }
   localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+
 
 function astro(id){
   addItemToCart(id);
@@ -508,7 +523,7 @@ function registerEl() {
 };
 
 function loginEl() {
-  document.querySelector('.prompter').style =" transform: rotateY(0deg) !important;";
+  document.querySelector('.prompter').style =" transform: rotateY(-0deg) !important;";
 
   // document.querySelector('.prompter').classList.remove('switch');
   // document.querySelector('.prompter').classList.add('switch2');
