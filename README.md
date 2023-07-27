@@ -1,6 +1,6 @@
 <div width = "100%" align="center" >
   <img src="https://github.com/Fkmanny/E-commerce-Website/assets/111753024/48a49707-695f-412f-8c25-4dd95b07a59b" alt="fkjiggy" align="center" width="150" />
-div>
+<div>
 
 # About the Project
 
