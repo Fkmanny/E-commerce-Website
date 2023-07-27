@@ -1,4 +1,4 @@
-
+ // Local API
 fetch("productss.json")
  .then(function(response){
   return response.json();
@@ -29,6 +29,8 @@ fetch("productss.json")
 
   };
  })
+
+ // Card Click Function
 
  function details(id) {
   fetch("productss.json")
@@ -195,7 +197,7 @@ function leave() {
 }
 
  //----------------------------------------------------
- //-----------------UPDATE QUANTITY---------------------
+ //-----------------UPDATE QUANTITY--------------------
 
 function updateQuantity(productId, quantity) {
   for(let product of cart){
